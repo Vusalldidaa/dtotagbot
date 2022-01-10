@@ -77,7 +77,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag Prosesi Ugurlj bir şəkilde  Dayandirildi❌")
+        await event.respond("Tag Prosesi Uğurlu bir şəkilde  Dayandirildi❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -103,5 +103,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot isdeyir merak eleme 🚀 @VusalDeveloper Informasia Ala bilersiz <<")
+print(">> Bot isdeyir narahat olma 🚀 @VusalDeveloper Informasia Ala bilersiz <<")
 client.run_until_disconnected()
