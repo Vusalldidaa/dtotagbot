@@ -10,9 +10,9 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
-api_id = int(os.environ.get("19256632"))
-api_hash = os.environ.get("ad85424c6b4a1642e4ee4082d64bbe73")
-bot_token = os.environ.get("5060190287:AAFS_hsg5PPkDlG31y6AKhSYg8IwnwSUR14")
+api_id = int(os.environ.get("API ID"))
+api_hash = os.environ.get("API HASH")
+bot_token = os.environ.get("BOT TOKEN")
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 anlik_calisan = []
@@ -27,8 +27,8 @@ async def cancel(event):
 async def start(event):
   await event.reply("**Rc Tag Bot**, Qrupda və ya kanalda demək olar ki, istənilən üzvü qeyd edə bilərəm ★\nƏtraflı məlumat üçün **/help** üzərinə klikləyin.",
                     buttons=(
-                      [Button.url('🌟 Məni Bir Qurupa Əlavə Edin!', 'http://t.me/TaggerAzeRoBot?startgroup=a'),
-                      Button.url('📣 DTÖ Team 🇦🇿', 'https://t.me/TheLeonChat'),
+                      [Button.url('🌟 Məni Bir Qurupa Əlavə Edin!', 'http://t.me/DTOTaggerBot?startgroup=a'),
+                      Button.url('📣 DTÖ Team 🇦🇿', 'https://t.me/DTOteam'),
                       Button.url('🧑‍💻 Sahibim', 'https://t.me/VusalDeveloper')]
                     ),
                     link_preview=False
